@@ -1,0 +1,80 @@
+.mainbox{
+    width: 600px;
+    height: 200px;
+    border: 1px solid rgb(255, 255, 255);
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+#dino{
+ width: 50px;
+ height: 50px;
+ background-image: url(thief.gif);
+ background-size: 50px 50px;
+ position: relative;
+ top: 150px; 
+  
+}
+.jump{
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump{
+0%{
+    top: 150px;
+}
+30%{
+    top: 120px;
+}
+50%{
+    top:70px;
+}
+80%{
+    top: 120px;
+}
+100%{
+    top:150px;
+}
+
+
+}
+
+#cactus {
+    width: 50px;
+    height: 50px; 
+    background-image: url(kindpng_1391750.png);
+    background-size: 50px 50px;
+    position: relative;
+    left: 580px;
+    top: 101px;
+    animation: block 1.7s infinite linear;
+}
+
+@keyframes block {
+    0% {
+        left: 580px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+
+.tilebox{
+    font-family: cursive;
+    font-size: 60px;
+    padding: 60px;
+}
+.mady{
+    color: rgb(255, 255, 255);
+    background-color: black;
+    padding: 60px;
+    top: 10px;
+    margin-top: 10px;
+    
+
+}
+.scoore{
+    padding: 48px;
+}

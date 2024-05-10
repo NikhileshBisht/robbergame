@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Tiles from './component/Tiles';
+import Score from './component/Score';
+import Title from './component/Title';  
+import Made from './component/Made';
+import { useState } from 'react';
+ 
 function App() {
+  const [reset, setReset] = useState(false);
+ 
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Title/>
+      <Tiles   setReset={setReset} />
+      <Score reset={reset} />
+      <Made/>
     </div>
   );
 }
